@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <style>
+        .contain {
+            height: 40vh;
+            background-image: url(image/pics9.jpg);
+            position: relative;
+            background-size: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid w-50 boder border-2 shadow-lg">
+        <div class="contain border border-2"></div>
+        <h1 class="text-success">Lyrics of the song 99 Bottle</h1>
+        <div  id="show"></div>
+        <p> 1 carton of biscuit on the wall, 1 carton of biscuit. <br> Take one down an pass it around, no bottles on the wall.</p>
+        <p>no more carton of biscuit on the wall, no more carton of biscuit. <br> Go to the store and buy some more, 99 carton of biscuit on the wall</p>
+    </div>
+
+
+
+
+
+
+    <script>
+        for(var i=100; i>=3; i--){
+            show.innerHTML += `<p>${i- 1} carton of biscuit on the wall, ${i-1} bottles of beer. <br> Take one down an pass it around, ${i-2} carton of biscuit. </p>`
+        }
+    </script>
+</body>
+</html>
